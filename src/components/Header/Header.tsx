@@ -1,18 +1,23 @@
+"use client";
 import "./header.css";
 import { FaRegUser } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import Image from "next/image";
 import Logo from "@/assets/icons/acicon.png";
-import Link from "next/link";
 import Navbar from "../Navbar/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleMenu } from "@/redux/features/menuSlice";
 
 const Header = () => {
+  const menuToggle = useSelector((state) => state.menu.value);
+  const dispatch = useDispatch();
+
   return (
     <header className="header">
-      <div className="hamburger">
+      <button className="hamburger" onClick={() => dispatch(toggleMenu())}>
         <GiHamburgerMenu />
-      </div>
+      </button>
       <div className="headerTop">
         {/* Right */}
         <div className="headerTop-right">

@@ -1,10 +1,14 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import "./navbar.css";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const toggleMenu = useSelector((state) => state.menu.value);
+
   return (
-    <div className="navbar">
+    <div className={toggleMenu ? "navbar" : "navbar hideMenu"}>
       <ul className="navLinks">
         <li>
           <Link href="/" className="navLink">

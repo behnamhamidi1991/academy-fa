@@ -4,9 +4,11 @@
   position: absolute;
   bottom: 0;
   background-color: #262e3b;
+  position: absolute;
 }
 
 .navLinks {
+  background-color: #262e3b;
   display: flex;
   width: 100%;
   gap: 60px;
@@ -26,6 +28,28 @@
 
 @media screen and (max-width: 1054px) {
   .navbar {
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 100;
+    background-color: #262e3b;
+    height: 330px;
+    width: 100%;
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 140px;
+  }
+
+  .hideMenu {
     display: none;
   }
 }
