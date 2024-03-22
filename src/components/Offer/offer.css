@@ -1,0 +1,27 @@
+.offer {
+  display: flex;
+  gap: 100px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    140deg,
+    rgb(23, 15, 158) 0%,
+    rgb(0, 94, 255),
+    rgb(0, 157, 255)
+  );
+  font-family: "vazirFD";
+  position: relative;
+  font-size: 14px;
+}
+
+.offerCloseBtn {
+  position: absolute;
+  right: 10px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.offerClosed {
+  display: none;
+}
