@@ -1,4 +1,5 @@
 .offer {
+  cursor: default;
   display: flex;
   gap: 100px;
   height: 27px;
