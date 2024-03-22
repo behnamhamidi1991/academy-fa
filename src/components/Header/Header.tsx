@@ -6,11 +6,11 @@ import Image from "next/image";
 import Logo from "@/assets/icons/acicon.png";
 import Navbar from "../Navbar/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toggleMenu } from "@/redux/features/menuSlice";
+import Link from "next/link";
 
 const Header = () => {
-  const menuToggle = useSelector((state) => state.menu.value);
   const dispatch = useDispatch();
 
   return (
@@ -18,7 +18,7 @@ const Header = () => {
       <button className="hamburger" onClick={() => dispatch(toggleMenu())}>
         <GiHamburgerMenu />
       </button>
-      <div className="headerTop">
+      <Link href="/" className="headerTop">
         {/* Right */}
         <div className="headerTop-right">
           <div className="headerTop-right-logo">
@@ -51,7 +51,7 @@ const Header = () => {
             <FaCartShopping className="header-cart-icon" />
           </div>
         </div>
-      </div>
+      </Link>
       <Navbar />
     </header>
   );

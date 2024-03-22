@@ -36,7 +36,7 @@ const Offer = () => {
         <IoClose />
       </button>
       <p className="offText">
-        50% خفیف ویژه به مناسبت ایام نوروز روی تمامی دوره های سایت
+        50% تخفیف ویژه به مناسبت ایام نوروز روی تمامی دوره های سایت
       </p>
       <div className="offCountdown">
         <div className="days">
