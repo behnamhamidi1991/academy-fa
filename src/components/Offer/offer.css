@@ -1,14 +1,14 @@
 .offer {
   display: flex;
   gap: 100px;
-  height: 30px;
+  height: 27px;
   justify-content: center;
   align-items: center;
   background: linear-gradient(
-    140deg,
-    rgb(23, 15, 158) 0%,
-    rgb(0, 94, 255),
-    rgb(0, 157, 255)
+    120deg,
+    var(--red-color),
+    var(--orange-color),
+    rgb(246, 173, 36)
   );
   font-family: "vazirFD";
   position: relative;
