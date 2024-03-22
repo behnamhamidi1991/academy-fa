@@ -1,0 +1,9 @@
+.header {
+  background-color: var(--secondary-color);
+}
+
+.headerTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

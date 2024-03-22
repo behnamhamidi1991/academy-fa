@@ -18,11 +18,17 @@ const Header = () => {
               type="text"
               placeholder="دوره مورد نظر خود را جستوجو کنید ..."
             />
-            <button>جستوجو</button>
           </div>
           div.
         </div>
-        <div className="headerTop-left"></div>
+        <div className="headerTop-left">
+          <div className="headerTop-left-user">
+            <FaRegUser className="header-user-icon" />
+          </div>
+          <div className="headerTop-left-cart">
+            <FaCartShopping className="header-cart-icon" />
+          </div>
+        </div>
       </div>
       <div className="headerBottom">
         <ul className="headerNavbar"></ul>
