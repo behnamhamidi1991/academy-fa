@@ -1,0 +1,25 @@
+.iconsectionContainer {
+  padding: 100px 10% 0 10%;
+  height: 100%;
+}
+
+.iconBox {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 120px;
+  font-family: "yekanBold";
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.iconBox-icon {
+  font-size: 49px;
+}
+
+.iconBox:hover {
+  background-color: var(--link-color);
+}
