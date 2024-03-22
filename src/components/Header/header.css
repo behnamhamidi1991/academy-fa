@@ -1,6 +1,5 @@
 .header {
   background-color: var(--secondary-color);
-  height: 100%;
   height: 140px;
   display: flex;
   flex-direction: column;
@@ -83,7 +82,7 @@
   gap: 5px;
   align-items: center;
   font-size: 18px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .headerTop-left-user {
@@ -130,4 +129,99 @@
   font-family: "vazirFD";
   top: -12px;
   left: -12px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1054px) {
+  .headerTop-right-searchbar input {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1054px) {
+  .headerTop-right-logo {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerTop-right {
+    gap: 1px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    font-size: 23px;
+  }
+
+  .header {
+    background-color: var(--secondary-color);
+    height: 110px;
+  }
+
+  .headerTop {
+    padding: 30px 9% 0 9%;
+  }
+  .headerTop-right-searchbar input {
+    width: 100%;
+  }
+  .headerTop-right-logo p {
+    display: none;
+  }
+
+  .headerTop-right-searchbar {
+    width: 100%;
+  }
+
+  .headerTop-right-searchbar form {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .headerTop-right-searchbar-btn {
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .headerTop-right-searchbar input {
+    width: 100%;
+  }
+  .headerTop-right-searchbar form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .hamburger {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 592px) {
+  .headerTop-right-searchbar form {
+    display: none;
+  }
+  .hamburger {
+    right: 20px;
+  }
+
+  .headerTop-right-logo {
+    position: absolute;
+    right: 53px;
+  }
+  .header-logo-image {
+    width: 32px;
+    padding-top: 4px;
+  }
+
+  .header {
+    height: 90px;
+  }
 }

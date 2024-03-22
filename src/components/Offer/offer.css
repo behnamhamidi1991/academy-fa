@@ -25,3 +25,40 @@
 .offerClosed {
   display: none;
 }
+
+.offCountdown {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 888px) {
+  .offer {
+    font-size: 13px;
+  }
+  .offCountdown {
+    gap: 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  .offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1px;
+    padding: 4px 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .offText {
+    font-size: 11px;
+  }
+
+  .offCountdown {
+    font-size: 14px;
+  }
+}

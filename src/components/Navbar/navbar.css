@@ -23,3 +23,9 @@
 .navLink:hover {
   color: var(--orange-color);
 }
+
+@media screen and (max-width: 1054px) {
+  .navbar {
+    display: none;
+  }
+}

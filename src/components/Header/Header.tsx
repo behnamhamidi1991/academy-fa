@@ -5,15 +5,25 @@ import Image from "next/image";
 import Logo from "@/assets/icons/acicon.png";
 import Link from "next/link";
 import Navbar from "../Navbar/Navbar";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   return (
     <header className="header">
+      <div className="hamburger">
+        <GiHamburgerMenu />
+      </div>
       <div className="headerTop">
         {/* Right */}
         <div className="headerTop-right">
           <div className="headerTop-right-logo">
-            <Image src={Logo} width={40} height={40} alt="logo" />
+            <Image
+              src={Logo}
+              width={40}
+              height={40}
+              alt="logo"
+              className="header-logo-image"
+            />
             <p>آکادمی آموزش آنلاین دیپ</p>
           </div>
           <div className="headerTop-right-searchbar">
