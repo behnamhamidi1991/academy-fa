@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { courses } from "@/data";
 import Image from "next/image";
@@ -6,14 +7,17 @@ import ReadBtn from "@/components/shared/ReadBtn/Button";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Courses = () => {
+  const fileredCourses = courses.filter((item) => +item.id <= 4);
+  console.log(fileredCourses);
+
   return (
     <div className="courses-section">
       <div className="courses-section-header">
-        <h2>دوره های آموزشی برنامه نویسی</h2>
+        <h2>برترین دوره های آموزشی برنامه نویسی</h2>
       </div>
 
       <div className="courses-section-content">
-        {courses.map((item) => (
+        {fileredCourses.map((item) => (
           <div key={item.id} className="courseBox">
             <div className="courseBox-image-container">
               <Image

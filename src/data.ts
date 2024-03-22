@@ -40,7 +40,7 @@ export const courses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "3",
+    id: "5",
     image: php,
     title: "آموزش php مقدماتی تا پیشرفته",
     content:
@@ -51,7 +51,7 @@ export const courses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "4",
+    id: "6",
     image: java,
     title: "آموزش جاوا در 90 جلسه",
     content:
@@ -62,7 +62,7 @@ export const courses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "5",
+    id: "3",
     image: kotlin,
     title: "بوت کمپ سی روزه کاتلین",
     content:
@@ -73,7 +73,7 @@ export const courses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "6",
+    id: "4",
     image: typescript,
     title: "دوره آموزش جامع تایپ اسکریپت",
     content:

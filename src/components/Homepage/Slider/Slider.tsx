@@ -27,6 +27,24 @@ const Slider = () => {
           delay: 1500,
           disableOnInteraction: false,
         }}
+        breakpoints={{
+          100: {
+            slidesPerView: 1,
+            spaceBetween: 18,
+          },
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 18,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 18,
+          },
+          980: {
+            slidesPerView: 7,
+            spaceBetween: 18,
+          },
+        }}
         modules={[Autoplay]}
       >
         <SwiperSlide className="iconBox coding">

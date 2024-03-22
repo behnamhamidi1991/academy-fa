@@ -14,12 +14,16 @@
 
 .courses-section-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   grid-gap: 14px;
 }
 
 .courseBox {
   background-color: var(--secondary-color);
+  border-radius: 0 0 5px 5px;
+}
+.courseImage {
+  border-radius: 5px 5px 0 0;
 }
 
 .courseBox-details {
