@@ -24,15 +24,11 @@ const Slider = () => {
         spaceBetween={10}
         loop={true}
         autoplay={{
-          delay: 1500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         breakpoints={{
           100: {
-            slidesPerView: 2,
-            spaceBetween: 18,
-          },
-          768: {
             slidesPerView: 3,
             spaceBetween: 18,
           },

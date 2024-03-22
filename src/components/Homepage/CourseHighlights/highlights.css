@@ -49,4 +49,10 @@
     min-width: 100px;
     width: 100%;
   }
+
+  .courseHighlights-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "yekanBold";
+  }
 }

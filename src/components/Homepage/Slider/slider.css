@@ -17,9 +17,23 @@
 }
 
 .iconBox-icon {
-  font-size: 49px;
+  font-size: 35px;
 }
 
 .iconBox:hover {
   background-color: var(--link-color);
+}
+
+@media screen and (max-width: 530px) {
+  .iconBox-icon {
+    font-size: 30px;
+  }
+
+  .iconBox p {
+    font-size: 13px;
+  }
+
+  .iconBox {
+    height: 100px;
+  }
 }
