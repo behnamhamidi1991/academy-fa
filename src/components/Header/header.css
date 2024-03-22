@@ -1,9 +1,133 @@
 .header {
   background-color: var(--secondary-color);
+  height: 100%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
+/* Header Top */
 .headerTop {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 30px 6% 0 6%;
+}
+
+/* Header Top Right */
+
+.headerTop-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.headerTop-right-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.headerTop-right-searchbar {
+  width: 100%;
+  max-width: 500px;
+}
+
+.headerTop-right-searchbar form {
+  position: relative;
+}
+
+.headerTop-right-searchbar input {
+  padding: 11px 15px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 0 6px 6px 0;
+  background-color: var(--primary-color);
+}
+
+.headerTop-right-searchbar-btn {
+  position: absolute;
+  background: linear-gradient(
+    120deg,
+    var(--red-color),
+    var(--orange-color),
+    rgb(246, 173, 36)
+  );
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 6px 0 0 5px;
+  font-family: "vazirBold";
+  border: none;
+  outline: none;
+}
+.headerTop-right-searchbar-btn:hover {
+  background: linear-gradient(
+    140deg,
+    var(--red-color),
+    var(--orange-color),
+    rgb(245, 156, 14)
+  );
+}
+
+/* Header Top Left */
+.headerTop-left {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  align-items: center;
+  font-size: 18px;
+  width: 100%;
+}
+
+.headerTop-left-user {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-user-icon {
+  font-size: 20px;
+}
+.header-user-icon:hover {
+  color: var(--orange-color);
+}
+
+.headerTop-left-cart {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-cart-icon {
+  font-size: 20px;
+}
+
+.header-cart-icon:hover {
+  color: var(--orange-color);
+}
+
+.cartQuantity {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: orangered;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-top: 1px;
+  font-family: "vazirFD";
+  top: -12px;
+  left: -12px;
 }

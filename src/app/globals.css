@@ -45,7 +45,13 @@
   src: url("../assets/fonts/vazirBold.ttf");
 }
 
+@font-face {
+  font-family: "vazirFD";
+  src: url("../assets/fonts/vazirFD.woff");
+}
+
 body {
   background-color: var(--primary-color);
   color: #fdfdfd;
+  font-family: "vazirRegular";
 }

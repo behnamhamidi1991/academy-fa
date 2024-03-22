@@ -1,0 +1,25 @@
+/* HEADER BOTTOM */
+.navbar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #262e3b;
+}
+
+.navLinks {
+  display: flex;
+  width: 100%;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 13px;
+}
+
+.navLink {
+  font-family: "vazirBold";
+}
+
+.navLink:hover {
+  color: var(--orange-color);
+}
