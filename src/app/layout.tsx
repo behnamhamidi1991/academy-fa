@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import Offer from "@/components/Offer/Offer";
 
 export const metadata: Metadata = {
   title: "آکادمی آموزشی دیپ لرن",
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" dir="rtl">
       <body>
+        <Offer />
         <Header />
         {children}
       </body>
