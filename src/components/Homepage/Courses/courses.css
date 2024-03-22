@@ -37,8 +37,8 @@
 }
 
 .courseBox-details p {
-  font-size: 13px;
-  line-height: 1.9;
+  font-size: 11px;
+  line-height: 2;
   text-align: justify;
   margin-top: 10px;
 }
@@ -79,14 +79,18 @@
   background-color: var(--red-color);
   padding: 4px;
   border-radius: 5px;
+  font-size: 11px;
+  text-decoration: line-through;
 }
 .priceCategory span:nth-child(2) {
   background-color: rgb(60, 152, 66);
   padding: 4px;
   border-radius: 5px;
+  font-size: 11px;
 }
 .priceCategory span:last-child {
   background-color: var(--orange-color);
   padding: 4px;
   border-radius: 5px;
+  font-size: 11px;
 }
