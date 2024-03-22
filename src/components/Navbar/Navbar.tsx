@@ -23,7 +23,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="/" className="navLink">
-            دباره ما
+            درباره ما
           </Link>
         </li>
         <li>

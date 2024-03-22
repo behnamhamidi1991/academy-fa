@@ -1,0 +1,5 @@
+.cartBtn {
+  background-color: var(--primary-color);
+  padding: 9px;
+  font-size: 14px;
+}

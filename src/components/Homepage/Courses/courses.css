@@ -1,0 +1,88 @@
+.courses-section {
+  padding: 100px 10%;
+}
+
+.courses-section-header h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.courses-section-header p {
+  font-family: "vazirLight";
+  font-size: 14px;
+}
+
+.courses-section-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+  grid-gap: 14px;
+}
+
+.courseBox {
+  background-color: var(--secondary-color);
+}
+
+.courseBox-details {
+  padding: 12px 20px;
+  font-family: "vazirFD";
+}
+
+.courseBox-details h3 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.courseBox-details p {
+  font-size: 13px;
+  line-height: 1.9;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.courseBox-btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.cartBtn {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  padding: 7px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.cartBtn:hover {
+  color: var(--orange-color);
+}
+
+.cartBtn:active {
+  color: var(--red-color);
+  font-size: 12px;
+}
+
+.priceCategory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.priceCategory span:first-child {
+  background-color: var(--red-color);
+  padding: 4px;
+  border-radius: 5px;
+}
+.priceCategory span:nth-child(2) {
+  background-color: rgb(60, 152, 66);
+  padding: 4px;
+  border-radius: 5px;
+}
+.priceCategory span:last-child {
+  background-color: var(--orange-color);
+  padding: 4px;
+  border-radius: 5px;
+}

@@ -1,0 +1,12 @@
+.readBtn {
+  background-color: var(--primary-color);
+  padding: 5px 11px;
+  border-radius: 6px;
+  margin-top: 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.readBtn:hover {
+  background-color: #000;
+}
