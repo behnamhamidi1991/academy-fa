@@ -4,13 +4,95 @@
 
 .allCourses-header {
   display: flex;
-  gap: 5px;
+  gap: 2px;
+  justify-content: center;
 }
 
 .allCourses-header button {
-  background-color: #000;
+  background-color: #ffffff;
+  color: #000;
   padding: 6px 8px;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 12px;
+  font-weight: bold;
+}
+
+.allCourses-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 17px;
+  justify-content: center;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.allCourse-image {
+  border-radius: 10px 10px 0 0;
+}
+
+.allCourses-main-box {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.allCourses-content {
+  padding: 10px 15px;
+}
+
+.allCourses-content h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.allCourses-info {
+  font-family: "vazirFD";
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.allCourses-info .info-item:first-child {
+  background-color: var(--red-color);
+  padding: 2px 3px;
+  text-decoration: line-through;
+}
+
+.allCourses-info .info-item:nth-child(2) {
+  background-color: green;
+  padding: 2px 3px;
+}
+
+.allCourses-info .info-item:nth-child(3) {
+  background-color: var(--orange-color);
+  padding: 2px 3px;
+}
+.allCourses-info .info-item:nth-child(4) {
+  background-color: #000;
+  padding: 4px 4px;
+}
+
+.allCourses-info .info-item:nth-child(4):hover {
+  color: var(--orange-color);
+}
+
+.allCourses-moreinfo {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.allCourses-readBtn {
+  background-color: black;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.allCourses-readBtn:hover {
+  background-color: var(--primary-color);
 }
