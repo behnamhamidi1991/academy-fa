@@ -1,0 +1,16 @@
+.allCourses {
+  padding: 50px 10%;
+}
+
+.allCourses-header {
+  display: flex;
+  gap: 5px;
+}
+
+.allCourses-header button {
+  background-color: #000;
+  padding: 6px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}

@@ -1,3 +1,4 @@
+import AllCourses from "@/components/Homepage/AllCourses/AllCourses";
 import CourseHighlights from "@/components/Homepage/CourseHighlights/CourseHighlights";
 import Courses from "@/components/Homepage/Courses/Courses";
 import Slider from "@/components/Homepage/Slider/Slider";
@@ -9,6 +10,7 @@ const Home = () => {
       <Slider />
       <Courses />
       <CourseHighlights />
+      <AllCourses />
     </main>
   );
 };

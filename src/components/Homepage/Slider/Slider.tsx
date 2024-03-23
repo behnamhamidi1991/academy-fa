@@ -14,10 +14,17 @@ import { PiCookingPotFill } from "react-icons/pi";
 import { MdBakeryDining } from "react-icons/md";
 import { SiBuymeacoffee } from "react-icons/si";
 import { MdOutlineSportsFootball } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Slider = () => {
   return (
-    <div className="iconsectionContainer">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2 }}
+      exit={{ opacity: 0 }}
+      className="iconsectionContainer"
+    >
       <Swiper
         className="iconsContainer"
         slidesPerView={7}
@@ -72,7 +79,7 @@ const Slider = () => {
           <p>ورزشی</p>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 
