@@ -1,0 +1,81 @@
+.cartPage {
+  padding: 100px 10%;
+}
+
+.cartPage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartPage-header h2 {
+  font-size: 49px;
+  margin-bottom: 10px;
+}
+
+.cartPage-header p {
+  font-size: 15px;
+  font-family: "vazirFD";
+  font-weight: 300;
+}
+
+.cartPage-icon {
+  font-size: 49px;
+  color: var(--link-color);
+}
+
+.cartItems-container {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "vazirFD";
+  margin-top: 40px;
+}
+
+.cartItems-box {
+  background-color: var(--secondary-color);
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cartItems-box .cartItems-image-title .cartItems-box-image {
+  width: 300px;
+  min-width: 300px;
+}
+
+.cartItems-number {
+  background-color: var(--orange-color);
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cartItems-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cartItems-btns button:first-child {
+  background-color: var(--red-color);
+  border-radius: 5px;
+  padding: 4px 5px;
+  font-size: 12px;
+}
+.cartItems-btns button:last-child {
+  background-color: var(--primary-color);
+  padding: 4px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
