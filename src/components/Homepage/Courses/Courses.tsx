@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 
 const Courses = () => {
   const fileredCourses = courses.filter((item) => +item.id <= 4);
-  console.log(fileredCourses);
 
   return (
     <motion.div

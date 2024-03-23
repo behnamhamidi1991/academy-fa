@@ -58,13 +58,13 @@ const Header = () => {
         </div>
         {/* Left */}
         <div className="headerTop-left">
-          <div className="headerTop-left-user">
+          <Link href="/dashboard" className="headerTop-left-user">
             <FaRegUser className="header-user-icon" />
-          </div>
-          <div className="headerTop-left-cart">
+          </Link>
+          <Link href="/cart" className="headerTop-left-cart">
             <span className="cartQuantity">1</span>
             <FaCartShopping className="header-cart-icon" />
-          </div>
+          </Link>
         </div>
       </Link>
       <Navbar />
