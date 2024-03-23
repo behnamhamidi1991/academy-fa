@@ -7,6 +7,28 @@
   position: relative;
 }
 
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  animation: fadein 1s;
+  height: 130px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    top: -50;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 /* Header Top */
 .headerTop {
   width: 100%;

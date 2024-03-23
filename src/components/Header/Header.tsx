@@ -9,9 +9,24 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "@/redux/features/menuSlice";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Header = () => {
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+  const isSticky = () => {
+    const header = document.querySelector(".header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 300
+      ? header?.classList.add("is-sticky")
+      : header?.classList.remove("is-sticky");
+  };
 
   return (
     <header className="header">
