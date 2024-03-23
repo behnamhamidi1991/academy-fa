@@ -1,4 +1,3 @@
-"use client";
 import { FaShoppingCart } from "react-icons/fa";
 import "./cart.css";
 import { courses } from "@/data";

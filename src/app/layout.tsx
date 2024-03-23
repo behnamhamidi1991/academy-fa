@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Offer from "@/components/Offer/Offer";
-import ReduxProvider from "@/ReduxProvider";
+import StoreProvider from "@/StoreProvider";
+
+import dynamic from "next/dynamic";
+// Dynamically import the Header component with SSR disabled
+const HeaderNoSSR = dynamic(() => import("@/components/Header/Header"), {
+  ssr: false,
+});
 
 export const metadata: Metadata = {
   title: "آکادمی آموزشی دیپ لرن",
@@ -23,13 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="rtl">
-      <ReduxProvider>
-        <body>
-          <Offer />
-          <Header />
-          {children}
-        </body>
-      </ReduxProvider>
+      <body>
+        <Offer />
+        <StoreProvider>
+          <HeaderNoSSR /> {children}
+        </StoreProvider>
+      </body>
     </html>
   );
 }

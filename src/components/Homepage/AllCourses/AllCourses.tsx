@@ -1,10 +1,17 @@
-import ReadBtn from "@/components/shared/ReadBtn/Button";
+"use client";
 import "./allcourses.css";
 import { otherCourses } from "@/data";
 import Image from "next/image";
+import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 
 const AllCourses = () => {
+  // const [category, setCategory] = useState("");
+
+  // const musicCategory = otherCourses.filter(
+  //   (item) => item.category === "موسیقی"
+  // );
+
   return (
     <div className="allCourses">
       <div className="allCourses-header">

@@ -7,7 +7,7 @@ import Logo from "@/assets/icons/acicon.png";
 import Navbar from "../Navbar/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useDispatch } from "react-redux";
-import { toggleMenu } from "@/redux/features/menuSlice";
+import { toggleMenu } from "@/redux/menuSlice";
 import Link from "next/link";
 import { useEffect } from "react";
 
@@ -19,7 +19,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", isSticky);
     };
-  });
+  }, []);
   const isSticky = () => {
     const header = document.querySelector(".header");
     const scrollTop = window.scrollY;
@@ -33,7 +33,7 @@ const Header = () => {
       <button className="hamburger" onClick={() => dispatch(toggleMenu())}>
         <GiHamburgerMenu />
       </button>
-      <Link href="/" className="headerTop">
+      <div className="headerTop">
         {/* Right */}
         <div className="headerTop-right">
           <div className="headerTop-right-logo">
@@ -66,7 +66,7 @@ const Header = () => {
             <FaCartShopping className="header-cart-icon" />
           </Link>
         </div>
-      </Link>
+      </div>
       <Navbar />
     </header>
   );
