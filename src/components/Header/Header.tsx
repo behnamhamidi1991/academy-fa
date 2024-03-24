@@ -38,7 +38,7 @@ const Header = () => {
       <div className="headerTop">
         {/* Right */}
         <div className="headerTop-right">
-          <div className="headerTop-right-logo">
+          <Link href="/" className="headerTop-right-logo">
             <Image
               src={Logo}
               width={40}
@@ -47,7 +47,7 @@ const Header = () => {
               className="header-logo-image"
             />
             <p>آکادمی آموزش آنلاین دیپ</p>
-          </div>
+          </Link>
           <div className="headerTop-right-searchbar">
             <form>
               <input
