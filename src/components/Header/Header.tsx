@@ -6,12 +6,14 @@ import Image from "next/image";
 import Logo from "@/assets/icons/acicon.png";
 import Navbar from "../Navbar/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "@/features/menuSlice";
 import Link from "next/link";
 import { useEffect } from "react";
 
 const Header = () => {
+  const cart = useSelector((state) => state.cart.items);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -62,7 +64,7 @@ const Header = () => {
             <FaRegUser className="header-user-icon" />
           </Link>
           <Link href="/cart" className="headerTop-left-cart">
-            <span className="cartQuantity">1</span>
+            <span className="cartQuantity">{cart.length}</span>
             <FaCartShopping className="header-cart-icon" />
           </Link>
         </div>
