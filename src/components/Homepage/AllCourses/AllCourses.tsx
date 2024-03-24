@@ -12,6 +12,7 @@ const AllCourses = () => {
 
   const dispatch = useDispatch();
 
+  const mixedCourses = otherCourses.filter((item) => +item.id <= 15);
   const filterMusic = otherCourses.filter((item) => item.category === "موسیقی");
   const filterLang = otherCourses.filter((item) => item.category === "زبان");
   const filterCooking = otherCourses.filter(
@@ -175,7 +176,7 @@ const AllCourses = () => {
                 </div>
               </div>
             ))
-          : otherCourses.map((item) => (
+          : mixedCourses.map((item) => (
               <div key={item.id} className="allCourses-main-box">
                 <div className="allCourses-moreinfo"></div>
                 <div className="allCourses-image-container">
