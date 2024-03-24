@@ -21,11 +21,11 @@ const Offer = () => {
     setSeconds(Math.floor((time / 1000) % 60));
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => getTime(deadline), 1000);
+  useEffect(() => {
+    const interval = setInterval(() => getTime(deadline), 1000);
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className={offerOpen ? "offer" : "offerClosed"}>

@@ -6,47 +6,189 @@ import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 
 const AllCourses = () => {
-  // const [category, setCategory] = useState("");
-
-  // const musicCategory = otherCourses.filter(
-  //   (item) => item.category === "موسیقی"
-  // );
+  const [category, setCategory] = useState("all");
+  const filterMusic = otherCourses.filter((item) => item.category === "موسیقی");
+  const filterLang = otherCourses.filter((item) => item.category === "زبان");
+  const filterCooking = otherCourses.filter(
+    (item) => item.category === "غذا و نوشیدنی"
+  );
+  const filterDev = otherCourses.filter(
+    (item) => item.category === "برنامه نویسی"
+  );
+  const filterScience = otherCourses.filter((item) => item.category === "پایه");
 
   return (
     <div className="allCourses">
       <div className="allCourses-header">
-        <button>برترین ها</button>
-        <button>برنامه نویسی</button>
-        <button>موسیقی</button>
-        <button>آشپزی</button>
-        <button>ورزشی</button>
-        <button>علوم پایه</button>
+        <button onClick={() => setCategory("all")}>برترین ها</button>
+        <button onClick={() => setCategory("dev")}>برنامه نویسی</button>
+        <button onClick={() => setCategory("music")}>موسیقی</button>
+        <button onClick={() => setCategory("cooking")}>آشپزی</button>
+        <button onClick={() => setCategory("lang")}>زبان</button>
+        <button onClick={() => setCategory("science")}>علوم پایه</button>
       </div>
       <div className="allCourses-main">
-        {otherCourses.map((item) => (
-          <div key={item.id} className="allCourses-main-box">
-            <div className="allCourses-moreinfo"></div>
-            <div className="allCourses-image-container">
-              <Image
-                src={item.image}
-                alt={item.title}
-                className="allCourse-image"
-              />
-            </div>
-            <div className="allCourses-content">
-              <h2>{item.title}</h2>
-              <div className="allCourses-info">
-                <p className="info-item">قیمت: {item.price}</p>
-                <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
-                <p className="info-item">دسته بندی: {item.category}</p>
-                <button className="info-item">
-                  <FaShoppingCart />
-                </button>
-                <button className="allCourses-readBtn">بیشتر بخوانید</button>
+        {category === "music"
+          ? filterMusic.map((item) => (
+              <div key={item.id} className="allCourses-main-box">
+                <div className="allCourses-moreinfo"></div>
+                <div className="allCourses-image-container">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    className="allCourse-image"
+                  />
+                </div>
+                <div className="allCourses-content">
+                  <h2>{item.title}</h2>
+                  <div className="allCourses-info">
+                    <p className="info-item">قیمت: {item.price}</p>
+                    <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
+                    <p className="info-item">دسته بندی: {item.category}</p>
+                    <button className="info-item">
+                      <FaShoppingCart />
+                    </button>
+                    <button className="allCourses-readBtn">
+                      بیشتر بخوانید
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            ))
+          : category === "dev"
+          ? filterDev.map((item) => (
+              <div key={item.id} className="allCourses-main-box">
+                <div className="allCourses-moreinfo"></div>
+                <div className="allCourses-image-container">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    className="allCourse-image"
+                  />
+                </div>
+                <div className="allCourses-content">
+                  <h2>{item.title}</h2>
+                  <div className="allCourses-info">
+                    <p className="info-item">قیمت: {item.price}</p>
+                    <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
+                    <p className="info-item">دسته بندی: {item.category}</p>
+                    <button className="info-item">
+                      <FaShoppingCart />
+                    </button>
+                    <button className="allCourses-readBtn">
+                      بیشتر بخوانید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))
+          : category === "cooking"
+          ? filterCooking.map((item) => (
+              <div key={item.id} className="allCourses-main-box">
+                <div className="allCourses-moreinfo"></div>
+                <div className="allCourses-image-container">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    className="allCourse-image"
+                  />
+                </div>
+                <div className="allCourses-content">
+                  <h2>{item.title}</h2>
+                  <div className="allCourses-info">
+                    <p className="info-item">قیمت: {item.price}</p>
+                    <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
+                    <p className="info-item">دسته بندی: {item.category}</p>
+                    <button className="info-item">
+                      <FaShoppingCart />
+                    </button>
+                    <button className="allCourses-readBtn">
+                      بیشتر بخوانید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))
+          : category === "lang"
+          ? filterLang.map((item) => (
+              <div key={item.id} className="allCourses-main-box">
+                <div className="allCourses-moreinfo"></div>
+                <div className="allCourses-image-container">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    className="allCourse-image"
+                  />
+                </div>
+                <div className="allCourses-content">
+                  <h2>{item.title}</h2>
+                  <div className="allCourses-info">
+                    <p className="info-item">قیمت: {item.price}</p>
+                    <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
+                    <p className="info-item">دسته بندی: {item.category}</p>
+                    <button className="info-item">
+                      <FaShoppingCart />
+                    </button>
+                    <button className="allCourses-readBtn">
+                      بیشتر بخوانید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))
+          : category === "science"
+          ? filterScience.map((item) => (
+              <div key={item.id} className="allCourses-main-box">
+                <div className="allCourses-moreinfo"></div>
+                <div className="allCourses-image-container">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    className="allCourse-image"
+                  />
+                </div>
+                <div className="allCourses-content">
+                  <h2>{item.title}</h2>
+                  <div className="allCourses-info">
+                    <p className="info-item">قیمت: {item.price}</p>
+                    <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
+                    <p className="info-item">دسته بندی: {item.category}</p>
+                    <button className="info-item">
+                      <FaShoppingCart />
+                    </button>
+                    <button className="allCourses-readBtn">
+                      بیشتر بخوانید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))
+          : otherCourses.map((item) => (
+              <div key={item.id} className="allCourses-main-box">
+                <div className="allCourses-moreinfo"></div>
+                <div className="allCourses-image-container">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    className="allCourse-image"
+                  />
+                </div>
+                <div className="allCourses-content">
+                  <h2>{item.title}</h2>
+                  <div className="allCourses-info">
+                    <p className="info-item">قیمت: {item.price}</p>
+                    <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
+                    <p className="info-item">دسته بندی: {item.category}</p>
+                    <button className="info-item">
+                      <FaShoppingCart />
+                    </button>
+                    <button className="allCourses-readBtn">
+                      بیشتر بخوانید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import Logo from "@/assets/icons/acicon.png";
 import Navbar from "../Navbar/Navbar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useDispatch } from "react-redux";
-import { toggleMenu } from "@/redux/menuSlice";
+import { toggleMenu } from "@/features/menuSlice";
 import Link from "next/link";
 import { useEffect } from "react";
 
