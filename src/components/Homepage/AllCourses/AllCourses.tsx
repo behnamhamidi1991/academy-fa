@@ -4,9 +4,14 @@ import { otherCourses } from "@/data";
 import Image from "next/image";
 import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/features/cartSlice";
 
 const AllCourses = () => {
   const [category, setCategory] = useState("all");
+
+  const dispatch = useDispatch();
+
   const filterMusic = otherCourses.filter((item) => item.category === "موسیقی");
   const filterLang = otherCourses.filter((item) => item.category === "زبان");
   const filterCooking = otherCourses.filter(
@@ -16,6 +21,10 @@ const AllCourses = () => {
     (item) => item.category === "برنامه نویسی"
   );
   const filterScience = otherCourses.filter((item) => item.category === "پایه");
+
+  const handleAddItem = (id: string) => {
+    dispatch(addToCart(id));
+  };
 
   return (
     <div className="allCourses">
@@ -45,7 +54,10 @@ const AllCourses = () => {
                     <p className="info-item">قیمت: {item.price}</p>
                     <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
                     <p className="info-item">دسته بندی: {item.category}</p>
-                    <button className="info-item">
+                    <button
+                      className="info-item"
+                      onClick={() => handleAddItem(item.id)}
+                    >
                       <FaShoppingCart />
                     </button>
                     <button className="allCourses-readBtn">

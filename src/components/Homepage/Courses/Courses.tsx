@@ -6,9 +6,17 @@ import "./courses.css";
 import ReadBtn from "@/components/shared/ReadBtn/Button";
 import { FaShoppingCart } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/features/cartSlice";
 
 const Courses = () => {
   const fileredCourses = courses.filter((item) => +item.id <= 4);
+
+  const dispatch = useDispatch();
+
+  const handleAddItem = (item) => {
+    dispatch(addToCart(item));
+  };
 
   return (
     <motion.div
@@ -44,7 +52,7 @@ const Courses = () => {
               </div>
               <div className="courseBox-btnContainer">
                 <ReadBtn>بیشتر بخوانید</ReadBtn>
-                <button className="cartBtn">
+                <button className="cartBtn" onClick={() => handleAddItem(item)}>
                   <FaShoppingCart />
                 </button>
               </div>
