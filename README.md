@@ -6,3 +6,6 @@
 - bcryptjs \*
 - swiperjs \*
 - framer-motion \*
+- react-toastify \*
+
+I create the cart slice, now I must develop it.

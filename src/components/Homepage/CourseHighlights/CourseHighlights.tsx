@@ -4,17 +4,10 @@ import "./highlights.css";
 import Image from "next/image";
 import highlightImage from "@/assets/images/highlights.jpg";
 import ReadBtn from "@/components/shared/ReadBtn/Button";
-import { motion } from "framer-motion";
 
 const CourseHighlights = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.2 }}
-      exit={{ opacity: 0 }}
-      className="courseHighlights"
-    >
+    <div className="courseHighlights">
       <div className="courseHighlights-right">
         <Image
           src={highlightImage}
@@ -52,7 +45,7 @@ const CourseHighlights = () => {
         </p>
         <ReadBtn>بیشتر بخوانید</ReadBtn>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

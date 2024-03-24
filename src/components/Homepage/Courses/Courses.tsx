@@ -5,7 +5,6 @@ import Image from "next/image";
 import "./courses.css";
 import ReadBtn from "@/components/shared/ReadBtn/Button";
 import { FaShoppingCart } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/features/cartSlice";
 
@@ -19,13 +18,7 @@ const Courses = () => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.1 }}
-      exit={{ opacity: 0 }}
-      className="courses-section"
-    >
+    <div className="courses-section">
       <div className="courses-section-header">
         <h2>برترین دوره های آموزشی برنامه نویسی</h2>
       </div>
@@ -60,7 +53,7 @@ const Courses = () => {
           </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
