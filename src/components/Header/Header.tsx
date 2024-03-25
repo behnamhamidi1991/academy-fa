@@ -10,9 +10,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "@/features/menuSlice";
 import Link from "next/link";
 import { useEffect } from "react";
+import { RootState } from "../../../lib/store";
 
 const Header = () => {
-  const cart = useSelector((state) => state.cart.items);
+  const cart = useSelector((state: RootState) => state.cart.items);
 
   const dispatch = useDispatch();
 
