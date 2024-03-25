@@ -12,7 +12,7 @@ const AllCourses = () => {
 
   const dispatch = useDispatch();
 
-  const mixedCourses = otherCourses.filter((item) => +item.id <= 15);
+  const mixedCourses = otherCourses.filter((item) => +item.id > 13);
   const filterMusic = otherCourses.filter((item) => item.category === "موسیقی");
   const filterLang = otherCourses.filter((item) => item.category === "زبان");
   const filterCooking = otherCourses.filter(
@@ -23,8 +23,8 @@ const AllCourses = () => {
   );
   const filterScience = otherCourses.filter((item) => item.category === "پایه");
 
-  const handleAddItem = (id: string) => {
-    dispatch(addToCart(id));
+  const handleAddItem = (item: any) => {
+    dispatch(addToCart(item));
   };
 
   return (
@@ -57,7 +57,7 @@ const AllCourses = () => {
                     <p className="info-item">دسته بندی: {item.category}</p>
                     <button
                       className="info-item"
-                      onClick={() => handleAddItem(item.id)}
+                      onClick={() => handleAddItem(item)}
                     >
                       <FaShoppingCart />
                     </button>
@@ -85,7 +85,10 @@ const AllCourses = () => {
                     <p className="info-item">قیمت: {item.price}</p>
                     <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
                     <p className="info-item">دسته بندی: {item.category}</p>
-                    <button className="info-item">
+                    <button
+                      className="info-item"
+                      onClick={() => handleAddItem(item)}
+                    >
                       <FaShoppingCart />
                     </button>
                     <button className="allCourses-readBtn">
@@ -112,7 +115,10 @@ const AllCourses = () => {
                     <p className="info-item">قیمت: {item.price}</p>
                     <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
                     <p className="info-item">دسته بندی: {item.category}</p>
-                    <button className="info-item">
+                    <button
+                      className="info-item"
+                      onClick={() => handleAddItem(item)}
+                    >
                       <FaShoppingCart />
                     </button>
                     <button className="allCourses-readBtn">
@@ -139,7 +145,10 @@ const AllCourses = () => {
                     <p className="info-item">قیمت: {item.price}</p>
                     <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
                     <p className="info-item">دسته بندی: {item.category}</p>
-                    <button className="info-item">
+                    <button
+                      className="info-item"
+                      onClick={() => handleAddItem(item)}
+                    >
                       <FaShoppingCart />
                     </button>
                     <button className="allCourses-readBtn">
@@ -166,7 +175,10 @@ const AllCourses = () => {
                     <p className="info-item">قیمت: {item.price}</p>
                     <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
                     <p className="info-item">دسته بندی: {item.category}</p>
-                    <button className="info-item">
+                    <button
+                      className="info-item"
+                      onClick={() => handleAddItem(item)}
+                    >
                       <FaShoppingCart />
                     </button>
                     <button className="allCourses-readBtn">
@@ -192,7 +204,10 @@ const AllCourses = () => {
                     <p className="info-item">قیمت: {item.price}</p>
                     <p className="info-item">قیمت با تخفیف: {item.offPrice}</p>
                     <p className="info-item">دسته بندی: {item.category}</p>
-                    <button className="info-item">
+                    <button
+                      className="info-item"
+                      onClick={() => handleAddItem(item)}
+                    >
                       <FaShoppingCart />
                     </button>
                     <button className="allCourses-readBtn">

@@ -113,7 +113,7 @@ import arabic from "@/assets/images/arabic.jpg";
 
 export const otherCourses: Courses[] = [
   {
-    id: "1",
+    id: "7",
     image: typescript,
     title: "دوره آموزش جامع تایپ اسکریپت",
     content:
@@ -124,7 +124,7 @@ export const otherCourses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "2",
+    id: "8",
     image: sp,
     title: "دوره جامع آموزش زبان اسپانیایی",
     content:
@@ -135,7 +135,7 @@ export const otherCourses: Courses[] = [
     category: "زبان",
   },
   {
-    id: "3",
+    id: "9",
     image: python,
     title: "آموزش جامع پایتون",
     content:
@@ -146,7 +146,7 @@ export const otherCourses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "4",
+    id: "10",
     image: piano,
     title: "آموزش پیانو مبتدی تا پیشرفته",
     content:
@@ -157,7 +157,7 @@ export const otherCourses: Courses[] = [
     category: "موسیقی",
   },
   {
-    id: "5",
+    id: "11",
     image: physics,
     title: "آموزش جامع فیزیک دبیرستان تا دانشگاه",
     content:
@@ -168,7 +168,7 @@ export const otherCourses: Courses[] = [
     category: "پایه",
   },
   {
-    id: "6",
+    id: "12",
     image: math,
     title: "ریاضی عمومی 1 و 2",
     content:
@@ -179,7 +179,7 @@ export const otherCourses: Courses[] = [
     category: "پایه",
   },
   {
-    id: "7",
+    id: "13",
     image: guitar,
     title: "دوره مسترینگ گیتار کلاسیک",
     content:
@@ -190,7 +190,7 @@ export const otherCourses: Courses[] = [
     category: "موسیقی",
   },
   {
-    id: "8",
+    id: "14",
     image: en,
     title: "آموزش زبان انگلیسی",
     content:
@@ -201,7 +201,7 @@ export const otherCourses: Courses[] = [
     category: "زبان",
   },
   {
-    id: "9",
+    id: "15",
     image: de,
     title: "آموزش زبان آلمانی",
     content:
@@ -212,7 +212,7 @@ export const otherCourses: Courses[] = [
     category: "زبان",
   },
   {
-    id: "10",
+    id: "16",
     image: fa,
     title: "آموزش زبان فرانسه",
     content:
@@ -223,7 +223,7 @@ export const otherCourses: Courses[] = [
     category: "زبان",
   },
   {
-    id: "11",
+    id: "17",
     image: cook,
     title: "دوره حضوری آموزش آشپزی (تهران)",
     content:
@@ -234,7 +234,7 @@ export const otherCourses: Courses[] = [
     category: "غذا و نوشیدنی",
   },
   {
-    id: "12",
+    id: "18",
     image: bake,
     title: "دوره آنلاین آموزش کیک پزی",
     content:
@@ -245,7 +245,7 @@ export const otherCourses: Courses[] = [
     category: "غذا و نوشیدنی",
   },
   {
-    id: "13",
+    id: "19",
     image: barista,
     title: "دوره حضوری باریستا (تهران)",
     content:
@@ -256,7 +256,7 @@ export const otherCourses: Courses[] = [
     category: "غذا و نوشیدنی",
   },
   {
-    id: "14",
+    id: "20",
     image: fashion,
     title: "دوره حضوری باریستا (تهران)",
     content:
@@ -268,7 +268,7 @@ export const otherCourses: Courses[] = [
   },
 
   {
-    id: "15",
+    id: "21",
     image: javascript,
     title: "کرش کورس آموزشی جاوا اسکریپت",
     content:
@@ -279,7 +279,7 @@ export const otherCourses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "16",
+    id: "22",
     image: react,
     title: "دوره جامع آموزش ری اکت",
     content:
@@ -290,7 +290,7 @@ export const otherCourses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "17",
+    id: "23",
     image: php,
     title: "آموزش php مقدماتی تا پیشرفته",
     content:
@@ -301,7 +301,7 @@ export const otherCourses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "18",
+    id: "24",
     image: java,
     title: "آموزش جاوا در 90 جلسه",
     content:
@@ -312,7 +312,7 @@ export const otherCourses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "19",
+    id: "25",
     image: kotlin,
     title: "بوت کمپ سی روزه کاتلین",
     content:
@@ -323,7 +323,7 @@ export const otherCourses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "20",
+    id: "26",
     image: typescript,
     title: "دوره آموزش جامع تایپ اسکریپت",
     content:
@@ -334,7 +334,7 @@ export const otherCourses: Courses[] = [
     category: "برنامه نویسی",
   },
   {
-    id: "21",
+    id: "27",
     image: chinese,
     title: "آموزش زبان چینی",
     content:
@@ -345,7 +345,7 @@ export const otherCourses: Courses[] = [
     category: "زبان",
   },
   {
-    id: "22",
+    id: "28",
     image: chemistery,
     title: "آموزش شیمی پایه",
     content:
@@ -356,7 +356,7 @@ export const otherCourses: Courses[] = [
     category: "پایه",
   },
   {
-    id: "23",
+    id: "29",
     image: linguistics,
     title: "زبان شناسی",
     content:
@@ -367,7 +367,7 @@ export const otherCourses: Courses[] = [
     category: "پایه",
   },
   {
-    id: "24",
+    id: "30",
     image: biology,
     title: "مفاهیم پایه در بیولوژی",
     content:
@@ -378,7 +378,7 @@ export const otherCourses: Courses[] = [
     category: "پایه",
   },
   {
-    id: "25",
+    id: "31",
     image: drums,
     title: "دوره مسترینگ درامز",
     content:
@@ -389,7 +389,7 @@ export const otherCourses: Courses[] = [
     category: "موسیقی",
   },
   {
-    id: "26",
+    id: "32",
     image: geology,
     title: "مفاهیم پایه در زمین شناسی",
     content:
@@ -400,7 +400,7 @@ export const otherCourses: Courses[] = [
     category: "پایه",
   },
   {
-    id: "27",
+    id: "33",
     image: danish,
     title: "پکیج آموزشی زبان دانمارکی",
     content:
@@ -411,7 +411,7 @@ export const otherCourses: Courses[] = [
     category: "زبان",
   },
   {
-    id: "28",
+    id: "34",
     image: japanese,
     title: "دوره وی آی پی زبان ژاپنی",
     content:
@@ -422,7 +422,7 @@ export const otherCourses: Courses[] = [
     category: "زبان",
   },
   {
-    id: "29",
+    id: "35",
     image: violin,
     title: "دوره گروهی آموزش ویالون",
     content:
@@ -433,7 +433,7 @@ export const otherCourses: Courses[] = [
     category: "موسیقی",
   },
   {
-    id: "30",
+    id: "36",
     image: russian,
     title: "دوره گروهی آموزش زبان روسی",
     content:
@@ -444,7 +444,7 @@ export const otherCourses: Courses[] = [
     category: "زبان",
   },
   {
-    id: "31",
+    id: "37",
     image: musicTheory,
     title: "دوره آموزش تئوری موسیقی",
     content:
@@ -455,7 +455,7 @@ export const otherCourses: Courses[] = [
     category: "موسیقی",
   },
   {
-    id: "32",
+    id: "38",
     image: arabic,
     title: "زبان عربی سطح مقدماتی",
     content:
