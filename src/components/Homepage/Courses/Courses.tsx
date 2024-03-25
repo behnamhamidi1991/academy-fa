@@ -13,7 +13,7 @@ const Courses = () => {
 
   const dispatch = useDispatch();
 
-  const handleAddItem = (item) => {
+  const handleAddItem = (item: any) => {
     dispatch(addToCart(item));
   };
 
