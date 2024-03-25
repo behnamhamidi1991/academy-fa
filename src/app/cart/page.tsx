@@ -1,21 +1,28 @@
+"use client";
 import { FaShoppingCart } from "react-icons/fa";
 import "./cart.css";
 import { courses } from "@/data";
 import Image from "next/image";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../../../lib/store";
 
 const CartPage = () => {
-  const quantity = courses.length;
+  const cartItems = useSelector((state: RootState) => state.cart.items);
 
   return (
     <div className="cartPage">
       <div className="cartPage-header">
         <FaShoppingCart className="cartPage-icon" />
         <h2>سبد خرید</h2>
-        <p>سبد خرید شما خالی است</p>
+        {cartItems.length === 0 ? (
+          <p>سبد خرید شما خالی است</p>
+        ) : (
+          <p>{cartItems.length} آیتم در سبد خرید شما موجود می باشد</p>
+        )}
       </div>
       <div className="cartPage-body">
         <div className="cartItems-container">
-          {courses.map((item, index) => (
+          {cartItems.map((item, index) => (
             <div key={item.id} className="cartItems-box">
               <div className="cartItems-number">{index + 1}</div>
               <div className="cartItems-image-title">

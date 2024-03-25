@@ -79,3 +79,18 @@
   border-radius: 5px;
   font-size: 12px;
 }
+
+.cartItems-price p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.cartItems-price p:first-child {
+  color: tomato;
+  text-decoration: line-through;
+}
+
+.cartItems-price p:last-child {
+  color: greenyellow;
+  font-weight: bold;
+}
