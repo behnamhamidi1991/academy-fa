@@ -10,6 +10,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
+import Countdown from "../Shared/Countdown/Countdown";
 
 const Header = () => {
   const theme = useSelector((state) => state.theme.dark);
@@ -19,10 +20,10 @@ const Header = () => {
     <div className="headerWrapper">
       <header className={theme ? "header dark" : "header light"}>
         <div className="logoAndLinks">
-          <div className="headerLogo">
+          <Link to="/" className="headerLogo">
             <img src={logo} alt="logo" />
             <p>آکادمی آموزشی دیپ لرن</p>
-          </div>
+          </Link>
           <ul className="headerLinks">
             <li className="headerLink">
               <Link to="" className="headerLinkItem">
@@ -54,22 +55,7 @@ const Header = () => {
         </div>
 
         <div className="countDown">
-          <div className="counterItem days">
-            <span className="countDownNum">00</span>
-            <span className="countDownLabel">روز</span>
-          </div>
-          <div className="counterItem hours">
-            <span className="countDownNum">00</span>
-            <span className="countDownLabel">ساعت</span>
-          </div>
-          <div className="counterItem minutes">
-            <span className="countDownNum">00</span>
-            <span className="countDownLabel">دقیقه</span>
-          </div>
-          <div className="counterItem seconds">
-            <span className="countDownNum">00</span>
-            <span className="countDownLabel">ثانیه</span>
-          </div>
+          <Countdown />
         </div>
 
         <div className="headerIcons">

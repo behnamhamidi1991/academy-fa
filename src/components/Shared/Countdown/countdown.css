@@ -1,0 +1,48 @@
+.countDown {
+  display: flex;
+  gap: 10px;
+  cursor: default;
+  user-select: none;
+}
+
+.days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.counterItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 6px 12px;
+  font-family: "vazirFD";
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* .hours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+} */
+
+/* .minutes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.seconds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+} */
