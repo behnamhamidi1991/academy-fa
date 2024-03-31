@@ -13,6 +13,7 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 import { BiSolidOffer } from "react-icons/bi";
 import Countdown from "../Shared/Countdown/Countdown";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Megamenu from "./Megamenu/Megamenu";
 
 const Header = () => {
   const theme = useSelector((state) => state.theme.dark);
@@ -82,6 +83,7 @@ const Header = () => {
           </button>
         </div>
       </header>
+      <Megamenu />
     </div>
   );
 };

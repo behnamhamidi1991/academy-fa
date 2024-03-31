@@ -1,0 +1,50 @@
+.megaMenu {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "yekanRegular";
+  padding: 20px 30px;
+  align-items: center;
+  border-radius: 10px;
+  width: 700px;
+  position: absolute;
+  top: 115px;
+  right: 150px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.megaMenuBox ul {
+  display: flex;
+}
+
+.megaMenuBox ul li {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 3px 9px;
+  border-radius: 10px;
+  transition: all ease-in-out 0.1s;
+}
+
+.megaMenuBox ul li:hover {
+  background-color: var(--link-color);
+  cursor: pointer;
+}
+
+.megaMenuTitle {
+  color: var(--text-color);
+}
+
+.megaMenuIcon {
+  background-color: var(--link-color);
+  padding: 3px 5px;
+  border-radius: 40%;
+  font-size: 15px;
+}
+
+.megaMenuTitle {
+  font-size: 16px;
+}
