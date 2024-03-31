@@ -24,7 +24,7 @@
   --text-color: #fdfdfd;
   --red-color: #f43219;
   --orange-color: #eb671c;
-  --link-color: #757e8d;
+  --link-color: #606a7c;
 }
 
 .light {
@@ -34,13 +34,13 @@
   --text-color: #111828;
   --red-color: #f43219;
   --orange-color: #eb671c;
-  --link-color: #757e8d;
+  --link-color: #cdd0d4;
 }
 
 /* FONTS */
 @font-face {
   font-family: "yekanRegular";
-  src: url("../assets/fonts/yekan.ttf");
+  src: url("./assets/fonts/yekan.ttf");
 }
 
 @font-face {
@@ -68,10 +68,6 @@
   src: url("./assets/fonts/vazirFD.woff");
 }
 
-body {
-  font-family: "vazirRegular";
-}
-
 h1,
 h2,
 h3,
@@ -85,13 +81,5 @@ h6 {
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 20px;
-}
-
-.post {
-  margin: 100px 10%;
-  background-color: var(--secondary-color);
-}
-
-.form {
-  background-color: var(--third-color);
+  height: 100vh;
 }
