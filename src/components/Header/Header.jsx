@@ -2,6 +2,8 @@ import React from "react";
 import "./header.css";
 import logo from "../../assets/icons/acicon.png";
 import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 const Header = () => {
   return (
