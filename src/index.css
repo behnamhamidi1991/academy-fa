@@ -45,27 +45,27 @@
 
 @font-face {
   font-family: "yekanBold";
-  src: url("../assets/fonts/yekanBold.ttf");
+  src: url("./assets/fonts/yekanBold.ttf");
 }
 
 @font-face {
   font-family: "vazirRegular";
-  src: url("../assets/fonts/vazir.ttf");
+  src: url("./assets/fonts/vazir.ttf");
 }
 
 @font-face {
   font-family: "vazirLight";
-  src: url("../assets/fonts/vazirLight.ttf");
+  src: url("./assets/fonts/vazirLight.ttf");
 }
 
 @font-face {
   font-family: "vazirBold";
-  src: url("../assets/fonts/vazirBold.ttf");
+  src: url("./assets/fonts/vazirBold.ttf");
 }
 
 @font-face {
   font-family: "vazirFD";
-  src: url("../assets/fonts/vazirFD.woff");
+  src: url("./assets/fonts/vazirFD.woff");
 }
 
 body {
