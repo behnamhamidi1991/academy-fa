@@ -77,3 +77,9 @@ h5,
 h6 {
   font-family: "yekanRegular";
 }
+
+.main {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+}
