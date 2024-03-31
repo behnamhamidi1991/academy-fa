@@ -10,6 +10,7 @@
 :root {
   --primary-color: #111828;
   --secondary-color: #202938;
+  --third-color: #2f3c53;
   --text-color: #fdfdfd;
   --red-color: #f43219;
   --orange-color: #eb671c;
@@ -19,6 +20,7 @@
 .dark {
   --primary-color: #111828;
   --secondary-color: #202938;
+  --third-color: #2f3c53;
   --text-color: #fdfdfd;
   --red-color: #f43219;
   --orange-color: #eb671c;
@@ -26,8 +28,9 @@
 }
 
 .light {
-  --primary-color: #fdfdfd;
-  --secondary-color: #e5e5e5;
+  --primary-color: #f8f8f8;
+  --secondary-color: #ffffff;
+  --third-color: #e4e6ee;
   --text-color: #111828;
   --red-color: #f43219;
   --orange-color: #eb671c;
@@ -82,4 +85,13 @@ h6 {
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 20px;
+}
+
+.post {
+  margin: 100px 10%;
+  background-color: var(--secondary-color);
+}
+
+.form {
+  background-color: var(--third-color);
 }
