@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -18,6 +18,8 @@ import Megamenu from "./Megamenu/Megamenu";
 const Header = () => {
   const theme = useSelector((state) => state.theme.dark);
   const dispatch = useDispatch();
+
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <div className="headerWrapper">
@@ -39,7 +41,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <button className="headerLinkBtn">
+              <button
+                className="headerLinkBtn"
+                onClick={() => setOpenMenu(!openMenu)}
+              >
                 <MdKeyboardArrowDown />
                 منوی سایت
               </button>
@@ -83,7 +88,11 @@ const Header = () => {
           </button>
         </div>
       </header>
-      <Megamenu />
+      {openMenu && (
+        <div className="megaMenuHeader">
+          <Megamenu />
+        </div>
+      )}
     </div>
   );
 };
