@@ -10,7 +10,9 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
+import { BiSolidOffer } from "react-icons/bi";
 import Countdown from "../Shared/Countdown/Countdown";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   const theme = useSelector((state) => state.theme.dark);
@@ -24,6 +26,11 @@ const Header = () => {
             <img src={logo} alt="logo" />
             <p>آکادمی آموزشی دیپ لرن</p>
           </Link>
+          <div className="hamburgerContainer">
+            <button className="hamburgerBtn">
+              <GiHamburgerMenu className="hamburgerIcon" />
+            </button>
+          </div>
           <ul className="headerLinks">
             <li className="headerLink">
               <Link to="" className="headerLinkItem">
@@ -54,7 +61,8 @@ const Header = () => {
           </ul>
         </div>
 
-        <div className="countDown">
+        <div className="countDownContainer">
+          <BiSolidOffer className="offIcon" />
           <Countdown />
         </div>
 

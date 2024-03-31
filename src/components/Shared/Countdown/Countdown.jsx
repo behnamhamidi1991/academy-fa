@@ -25,7 +25,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <>
+    <div className="countDown">
       <div className="counterItem days">
         <span className="countDownNum">{days < 10 ? "0" + days : days}</span>
         <span className="countDownLabel">روز</span>
@@ -46,7 +46,7 @@ const Countdown = () => {
         </span>
         <span className="countDownLabel">ثانیه</span>
       </div>
-    </>
+    </div>
   );
 };
 

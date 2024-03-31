@@ -1,0 +1,45 @@
+.offer {
+  cursor: default;
+  display: flex;
+  gap: 10px;
+  height: 27px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    160deg,
+    var(--red-color),
+    var(--orange-color),
+    rgb(246, 130, 36)
+  );
+  font-family: "vazirFD";
+  font-size: 14px;
+  color: #ffffff;
+  transition: all ease-in-out 0.3s;
+}
+
+.getOfferBtn {
+  font-family: "yekanRegular";
+  color: #fff;
+  padding: 1px 5px;
+  background: var(--red-color);
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.offerCloseBtn {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 20%;
+  background: transparent;
+  border: none;
+}
+
+.offerClosed {
+  display: none;
+}
