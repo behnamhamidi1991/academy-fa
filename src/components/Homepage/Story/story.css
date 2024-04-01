@@ -1,0 +1,32 @@
+.storyContainer {
+  padding: 30px 10%;
+  user-select: none;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.storyBox {
+  width: 60px;
+  /* background-color: red; */
+  padding: 5px 0;
+}
+
+.storyBox img {
+  width: 100%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  background: linear-gradient(var(--red-color), rgb(246, 130, 36)) padding-box,
+    linear-gradient(to top, var(--red-color), rgb(246, 130, 36)) border-box;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}

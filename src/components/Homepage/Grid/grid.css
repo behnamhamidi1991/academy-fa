@@ -1,0 +1,27 @@
+.gridHomepage {
+  padding: 10px 10%;
+}
+
+.gridHomepage-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gridHomepage-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.gridHomepage-box {
+  box-shadow: 2px 1px 6px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.gridHomepage-box:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
