@@ -5,7 +5,7 @@
 .gridHomepage-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 6px;
 }
 
 .gridHomepage-box img {
@@ -17,6 +17,7 @@
 .gridHomepage-box {
   box-shadow: 2px 1px 6px 1px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  position: relative;
 }
 
 .gridHomepage-box:first-child {
@@ -24,4 +25,67 @@
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.gridHomepage-content {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 0 30px;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.gridHomepage-content:hover {
+  opacity: 1;
+}
+
+.gridHomepage-content h2 {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.gridHomepage-content p {
+  font-family: "vazirRegular";
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 8px;
+}
+
+.gridHomepage-ReadBtn {
+  font-family: "yekanRegular";
+  color: #fff;
+  background-color: var(--red-color);
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.gridHomepage-iconContainer {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  /* width: 100%; */
+  margin-top: 15px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.gridHomepage-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+.gridHomepage-icon:hover {
+  color: var(--orange-color);
 }
