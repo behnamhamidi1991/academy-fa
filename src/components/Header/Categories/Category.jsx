@@ -29,10 +29,12 @@ const Category = () => {
         <li>پایتون</li>
         <li>پی اچ پی</li>
         <li>دات نت</li>
-        <li></li>
+        <li>سی پلاس پلاس</li>
       </ul>
 
-      <ul></ul>
+      <ul>
+        <h2></h2>
+      </ul>
 
       <div></div>
       <div></div>
