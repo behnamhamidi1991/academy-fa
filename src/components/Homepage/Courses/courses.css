@@ -1,0 +1,109 @@
+.allCourses {
+  padding: 150px 10%;
+}
+
+.allCoursesHeader {
+  margin-bottom: 20px;
+}
+
+.allCourses p {
+  font-family: "vazirRegular";
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.allCourses-courseBox-imageContainer img {
+  width: 100%;
+}
+
+.allCoursesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coursesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-gap: 12px;
+}
+
+.allCourses-courseBox {
+  background-color: var(--secondary-color);
+  box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.allCourses-courseBox-contentWrapper {
+  padding: 12px 14px;
+}
+
+/* CONTENT PART */
+
+.allCourses-courseBox-content p {
+  font-family: "vazirRegular";
+}
+
+.allCourses-courseBox-details {
+  font-family: "vazirFD";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.allCourses-courseBox-details span:first-child {
+  background-color: tomato;
+  padding: 3px 6px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.allCourses-courseBox-details span:nth-child(2) {
+  background-color: rgb(13, 139, 109);
+  padding: 3px 6px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.allCourses-courseBox-details span:last-child {
+  background-color: steelblue;
+  padding: 3px 6px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.loadMoreBtn {
+  border: none;
+  padding: 7px 10px;
+  font-family: "yekanRegular";
+  background-color: var(--red-color);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.allCourses-courseBox-btnContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.allCourses-ReadmoreBtn {
+  background-color: var(--primary-color);
+  padding: 5px 9px;
+  font-family: "yekanRegular";
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--text-color);
+}
+
+.allCourses-buyBtn {
+  background-color: var(--orange-color);
+  padding: 4px 8px;
+  font-family: "yekanRegular";
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+}
