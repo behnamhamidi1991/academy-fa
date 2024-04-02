@@ -10,9 +10,27 @@ const Story = () => {
   return (
     <div className="storyContainer">
       <Swiper
-        slidesPerView={15}
+        slidesPerView={5}
         spaceBetween={10}
         grabCursor={true}
+        breakpoints={{
+          0: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+          537: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+          },
+          799: {
+            slidesPerView: 10,
+            spaceBetween: 10,
+          },
+          1194: {
+            slidesPerView: 15,
+            spaceBetween: 10,
+          },
+        }}
         modules={[Pagination]}
         className="mySwiper"
       >

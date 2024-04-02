@@ -30,3 +30,15 @@
     linear-gradient(to top, var(--red-color), rgb(246, 130, 36)) border-box;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 533px) {
+  .storyBox img {
+    border: 3px solid transparent;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .storyContainer {
+    padding: 10px 2%;
+  }
+}

@@ -89,3 +89,38 @@
 .gridHomepage-icon:hover {
   color: var(--orange-color);
 }
+
+@media screen and (max-width: 1109px) {
+  .gridHomepage-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+
+  @media screen and (max-width: 985px) {
+    .gridHomepage-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  .gridHomepage-box:first-child {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .gridHomepage-content h2 {
+    margin-bottom: 8px;
+  }
+ .gridHomepage-content p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .gridHomepage {
+    padding: 10px 2%;
+  }
+}

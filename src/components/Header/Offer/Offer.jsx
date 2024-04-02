@@ -13,7 +13,7 @@ const Offer = () => {
       >
         <GrFormClose className="" />
       </button>
-      <p>50% تحفیف ویژه به مناسبت ایام نوروز</p>
+      <p className="offerParagraph">50% تحفیف ویژه به مناسبت ایام نوروز</p>
       <button className="getOfferBtn">دریافت کد تخفیف</button>
     </div>
   );

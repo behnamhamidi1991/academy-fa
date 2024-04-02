@@ -20,6 +20,7 @@ const Header = () => {
   const dispatch = useDispatch();
 
   const [openMenu, setOpenMenu] = useState(false);
+  const [openBurger, setOpenBurger] = useState(false);
 
   return (
     <div className="headerWrapper">
@@ -30,17 +31,24 @@ const Header = () => {
             <p>آکادمی آموزشی دیپ لرن</p>
           </Link>
           <div className="hamburgerContainer">
-            <button className="hamburgerBtn">
+            <button
+              className="hamburgerBtn"
+              onClick={() => setOpenBurger(!openBurger)}
+            >
               <GiHamburgerMenu className="hamburgerIcon" />
             </button>
           </div>
-          <ul className="headerLinks">
+          <ul
+            className={
+              openBurger ? "headerLinks showBurgerMenu" : "headerLinks"
+            }
+          >
             <li className="headerLink">
               <Link to="" className="headerLinkItem">
                 صفحه اصلی
               </Link>
             </li>
-            <li>
+            <li className="headerLinkMenuLi">
               <button
                 className={
                   openMenu

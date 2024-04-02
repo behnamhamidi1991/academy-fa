@@ -43,3 +43,20 @@
 .offerClosed {
   display: none;
 }
+
+@media screen and (max-width: 439px) {
+  .offer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 2px;
+    padding: 5px 0;
+  }
+  .offerParagraph {
+    font-size: 14px;
+  }
+  .offerCloseBtn {
+    top: 12px;
+    right: 17px;
+  }
+}

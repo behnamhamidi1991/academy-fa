@@ -125,6 +125,10 @@
   display: none;
 }
 
+.hamburgerIcon {
+  color: var(--text-color);
+}
+
 .hamburgerBtn {
   background: transparent;
   margin-top: 13px;
@@ -139,6 +143,10 @@
   position: absolute;
 }
 
+.mobileHeaderLinks {
+  display: none;
+}
+
 @media screen and (max-width: 1395px) {
   .countDownContainer {
     display: none;
@@ -148,8 +156,40 @@
 @media screen and (max-width: 987px) {
   .headerLinks {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    top: 82px;
+    left: 0;
+    z-index: 5;
   }
+  .showBurgerMenu {
+    display: flex;
+  }
+
+  .headerLinkMenuLi {
+    display: none;
+  }
+
+  .mobileHeaderLinks {
+    display: flex;
+  }
+
   .hamburgerContainer {
     display: block;
+  }
+
+  .headerIcons button {
+    padding: 5px 8px;
+    font-size: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .headerLogo {
+    display: none;
   }
 }
