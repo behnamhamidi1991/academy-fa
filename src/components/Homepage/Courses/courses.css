@@ -77,16 +77,6 @@
   color: #fff;
 }
 
-.loadMoreBtn {
-  border: none;
-  padding: 7px 10px;
-  font-family: "yekanRegular";
-  background-color: var(--red-color);
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
-}
 .allCourses-courseBox-btnContainer {
   display: flex;
   gap: 5px;
@@ -113,4 +103,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.loadMoreBtn {
+  border: none;
+  padding: 3px 3px;
+  font-family: "yekanRegular";
+  border-bottom: solid 2px var(--red-color);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: transparent;
+  transition: all ease-in-out 0.1s;
+}
+
+.loadMoreBtn:hover {
+  border-bottom: solid 2px var(--orange-color);
 }
