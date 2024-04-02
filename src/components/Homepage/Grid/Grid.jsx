@@ -9,7 +9,7 @@ import { FaBookmark } from "react-icons/fa";
 import { IoIosShareAlt } from "react-icons/io";
 
 const Grid = () => {
-  const selectedIds = [19, 3, 14, 20, 6, 9];
+  const selectedIds = [17, 3, 14, 20, 6, 9];
   const filteredCourses = courses
     .filter((item) => selectedIds.includes(Number(item.id)))
     .sort(

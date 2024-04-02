@@ -42,19 +42,18 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="headerLinkBtn"
+                className={
+                  openMenu
+                    ? "headerLinkBtn headerLinkBtnSelected"
+                    : "headerLinkBtn"
+                }
                 onClick={() => setOpenMenu(!openMenu)}
               >
-                <MdKeyboardArrowDown />
+                {openMenu ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
                 منوی سایت
               </button>
             </li>
-            <li>
-              <button className="headerLinkBtn">
-                <MdKeyboardArrowDown />
-                دسته بندی
-              </button>
-            </li>
+
             <li className="headerLink">
               <Link className="headerLinkItem">رویداد ها</Link>
             </li>
