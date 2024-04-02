@@ -7,14 +7,14 @@ import { FaShoppingCart } from "react-icons/fa";
 const Courses = () => {
   const [dislayedCourses, setDisplayedCourses] = useState([]);
 
-  const [courseCount, setCourseCount] = useState(6);
+  const [courseCount, setCourseCount] = useState(8);
 
   useEffect(() => {
     setDisplayedCourses(courses.slice(0, courseCount));
   }, [courseCount]);
 
   const loadMoreCourses = () => {
-    setCourseCount((prevCount) => prevCount + 6);
+    setCourseCount((prevCount) => prevCount + 8);
   };
 
   return (

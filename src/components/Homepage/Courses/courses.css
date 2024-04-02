@@ -24,7 +24,7 @@
 
 .coursesContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   grid-gap: 12px;
 }
 
@@ -41,6 +41,9 @@
 
 .allCourses-courseBox-content p {
   font-family: "vazirRegular";
+  font-size: 11px;
+  text-align: justify;
+  line-height: 1.9;
 }
 
 .allCourses-courseBox-details {
@@ -110,7 +113,7 @@
   padding: 3px 3px;
   font-family: "yekanRegular";
   border-bottom: solid 2px var(--red-color);
-  color: #fff;
+  color: var(--text-color)
   cursor: pointer;
   margin-top: 20px;
   background-color: transparent;
