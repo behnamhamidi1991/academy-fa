@@ -37,8 +37,8 @@ const Courses = () => {
                   <p>{item.content.substring(0, 282)} ...</p>
                 </div>
                 <div className="allCourses-courseBox-details">
-                  <span>{item.price.toLocaleString()}</span>
-                  <span>{item.offPrice.toLocaleString()}</span>
+                  <span>قیمت: {item.price.toLocaleString()}</span>
+                  <span>قیمت ویژه: {item.offPrice.toLocaleString()}</span>
                   <span>{item.category}</span>
                 </div>
                 <div className="allCourses-courseBox-btnContainer">
@@ -46,7 +46,7 @@ const Courses = () => {
                     بیشتر بخوانید
                   </Link>
                   <button className="allCourses-buyBtn">
-                    <FaShoppingCart />
+                    <FaShoppingCart className="allCourses-buyBtn-icon" />
                   </button>
                 </div>
               </div>
