@@ -2,6 +2,7 @@
   padding: 50px 10%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
   grid-gap: 15px;
 }
 
@@ -44,25 +45,24 @@
   width: 80px;
 }
 
-@media screen and (max-width: 1093px) {
+@media screen and (max-width: 1571px) {
   .categories {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
 }
 @media screen and (max-width: 781px) {
-  .categories {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .categories {
     padding: 100px 5%;
   }
 }
 @media screen and (max-width: 527px) {
   .categories {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .categories {
     padding: 100px 2%;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .categories {
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   }
 }
