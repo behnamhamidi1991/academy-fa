@@ -7,7 +7,6 @@ import man6 from "./assets/users/man6.jpg";
 import man7 from "./assets/users/man7.jpg";
 import man8 from "./assets/users/man8.jpg";
 import man9 from "./assets/users/man9.jpg";
-import man10 from "./assets/users/man10.jpg";
 import woman1 from "./assets/users/woman1.jpg";
 import woman2 from "./assets/users/woman2.jpg";
 import woman3 from "./assets/users/woman3.jpg";
@@ -53,10 +52,6 @@ export const people = [
   {
     id: 7,
     image: man9,
-  },
-  {
-    id: 19,
-    image: man10,
   },
 
   {
