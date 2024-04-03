@@ -72,12 +72,27 @@
   color: #fff;
 }
 
-.allCourses-courseBox-details span:last-child {
+.allCourses-courseBox-details span:nth-child(3) {
   background-color: steelblue;
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 2px;
   color: #fff;
+}
+
+.allCourses-courseBox-details span:nth-child(4) {
+  background-color: rgb(62, 57, 115);
+  padding: 3px 6px;
+  font-size: 11px;
+  border-radius: 2px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.studentIcon {
+  font-size: 15px;
 }
 
 .allCourses-courseBox-btnContainer {
@@ -113,7 +128,7 @@
   padding: 3px 3px;
   font-family: "yekanRegular";
   border-bottom: solid 2px var(--red-color);
-  color: var(--text-color)
+  color: var(--text-color);
   cursor: pointer;
   margin-top: 20px;
   background-color: transparent;

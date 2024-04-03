@@ -1,0 +1,7 @@
+.starsContainer {
+  display: flex;
+  color: gold;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

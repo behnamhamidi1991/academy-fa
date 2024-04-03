@@ -3,6 +3,9 @@ import "./courses.css";
 import { courses } from "../../../data";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
+import { PiStudentFill } from "react-icons/pi";
+import { IoIosStar } from "react-icons/io";
+import Star from "../../Shared/Stars/Star";
 
 const Courses = () => {
   const [dislayedCourses, setDisplayedCourses] = useState([]);
@@ -29,7 +32,7 @@ const Courses = () => {
           {dislayedCourses.map((item) => (
             <div key={item.id} className="allCourses-courseBox">
               <div className="allCourses-courseBox-imageContainer">
-                <img src={item.image} alt={item.title} />
+                <img src={item.image} alt={item.title} loading="lazy" />
               </div>
               <div className="allCourses-courseBox-contentWrapper">
                 <div className="allCourses-courseBox-content">
@@ -40,6 +43,13 @@ const Courses = () => {
                   <span>قیمت: {item.price.toLocaleString()}</span>
                   <span>قیمت ویژه: {item.offPrice.toLocaleString()}</span>
                   <span>{item.category}</span>
+                  <span>
+                    <PiStudentFill className="studentIcon" /> {item.numStudent}{" "}
+                    دانشجو
+                  </span>
+                  <span className="starContainer">
+                    <Star />
+                  </span>
                 </div>
                 <div className="allCourses-courseBox-btnContainer">
                   <Link to="/" className="allCourses-ReadmoreBtn">
