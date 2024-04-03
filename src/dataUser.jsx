@@ -13,7 +13,6 @@ import woman3 from "./assets/users/woman3.jpg";
 import woman4 from "./assets/users/woman4.jpg";
 import woman5 from "./assets/users/woman5.jpg";
 import woman6 from "./assets/users/woman6.jpg";
-import woman8 from "./assets/users/woman8.jpg";
 
 export const people = [
   {
@@ -76,11 +75,6 @@ export const people = [
   {
     id: 24,
     image: woman6,
-  },
-
-  {
-    id: 3,
-    image: woman8,
   },
 ];
 
