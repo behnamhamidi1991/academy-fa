@@ -16,28 +16,15 @@ const Feedback = () => {
         <p>افتخار و اعتبار ما نظرات کاربران سایت در مورد ما می باشد</p>
       </div>
 
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        pagination={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        history={{
-          key: "slide",
-        }}
-        modules={[Autoplay, Pagination, History]}
-        className="swiperFeedback"
-      >
+      <div className="feedbackContainer">
         {comments.map((item) => (
-          <SwiperSlide key={item.id} className="swiperFeedbackBox">
+          <div key={item.id} className="swiperFeedbackBox">
             <img src={item.image} alt="" />
             <h5>{item.name}</h5>
             <p>{item.feedback}</p>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 };
