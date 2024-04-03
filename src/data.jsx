@@ -44,6 +44,7 @@ export const courses = [
     price: 2589000,
     offPrice: 1294500,
     category: "برنامه نویسی",
+    numStudent: 254,
   },
   {
     id: "2",
@@ -55,6 +56,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 342,
   },
   {
     id: "5",
@@ -66,6 +68,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 142,
   },
   {
     id: "7",
@@ -77,6 +80,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 521,
   },
   {
     id: "3",
@@ -88,6 +92,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 231,
   },
   {
     id: "4",
@@ -99,6 +104,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 412,
   },
 
   {
@@ -111,6 +117,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 52,
   },
   {
     id: "8",
@@ -122,6 +129,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 892,
   },
   {
     id: "9",
@@ -133,6 +141,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 321,
   },
   {
     id: "39",
@@ -144,6 +153,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 42,
   },
   {
     id: "10",
@@ -155,6 +165,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "موسیقی",
+    numStudent: 682,
   },
   {
     id: "11",
@@ -166,6 +177,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "پایه",
+    numStudent: 211,
   },
   {
     id: "12",
@@ -177,6 +189,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "پایه",
+    numStudent: 134,
   },
   {
     id: "13",
@@ -188,6 +201,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "موسیقی",
+    numStudent: 370,
   },
   {
     id: "14",
@@ -199,6 +213,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 490,
   },
   {
     id: "15",
@@ -210,6 +225,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 220,
   },
   {
     id: "16",
@@ -221,6 +237,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 112,
   },
   {
     id: "17",
@@ -232,6 +249,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "غذا و نوشیدنی",
+    numStudent: 234,
   },
   {
     id: "18",
@@ -243,6 +261,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "غذا و نوشیدنی",
+    numStudent: 781,
   },
   {
     id: "19",
@@ -254,6 +273,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "غذا و نوشیدنی",
+    numStudent: 456,
   },
   {
     id: "20",
@@ -265,6 +285,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "مد و فشن",
+    numStudent: 235,
   },
 
   {
@@ -277,6 +298,7 @@ export const courses = [
     price: 2589000,
     offPrice: 1294500,
     category: "برنامه نویسی",
+    numStudent: 289,
   },
   {
     id: "22",
@@ -288,6 +310,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 932,
   },
   {
     id: "23",
@@ -299,6 +322,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 586,
   },
   {
     id: "24",
@@ -310,6 +334,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 342,
   },
   {
     id: "25",
@@ -321,6 +346,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 561,
   },
   {
     id: "26",
@@ -332,6 +358,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "برنامه نویسی",
+    numStudent: 234,
   },
   {
     id: "27",
@@ -343,6 +370,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 67,
   },
   {
     id: "28",
@@ -354,6 +382,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "پایه",
+    numStudent: 231,
   },
   {
     id: "29",
@@ -365,6 +394,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "پایه",
+    numStudent: 45,
   },
   {
     id: "30",
@@ -376,6 +406,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "پایه",
+    numStudent: 44,
   },
   {
     id: "31",
@@ -387,6 +418,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "موسیقی",
+    numStudent: 456,
   },
   {
     id: "32",
@@ -398,6 +430,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "پایه",
+    numStudent: 51,
   },
   {
     id: "33",
@@ -409,6 +442,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 66,
   },
   {
     id: "34",
@@ -420,6 +454,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 38,
   },
   {
     id: "35",
@@ -431,6 +466,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "موسیقی",
+    numStudent: 567,
   },
   {
     id: "36",
@@ -442,6 +478,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 293,
   },
   {
     id: "37",
@@ -453,6 +490,7 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "موسیقی",
+    numStudent: 234,
   },
   {
     id: "38",
@@ -464,5 +502,6 @@ export const courses = [
     price: 3840000,
     offPrice: 1920000,
     category: "زبان",
+    numStudent: 119,
   },
 ];

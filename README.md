@@ -1,8 +1,16 @@
-# React + Vite
+- Add number of students
+- Add satisfaction with stars
+- Add progress bar (if the course is done)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Add Membership like the photo DRIVE G
 
-Currently, two official plugins are available:
+-- Add the comment secions
+-- Add the footer
+-- Add the cart page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-- Setup redux toolkit and create the logic for shopping cart, price
+
+-- Add the login and signup page
+-- Add the single post || Dynamic Routing
+
+-- Start working on the api = expressjs
