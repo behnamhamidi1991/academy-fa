@@ -1,3 +1,28 @@
+.headerWrapper {
+  transition: top 0.3s;
+}
+
+.headerWrapper.hidden {
+  top: -100%;
+}
+
+.headerWrapper.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: slideDown 0.5s;
+}
+
+@keyframes slideDown {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;

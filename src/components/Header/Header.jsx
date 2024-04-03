@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -21,9 +21,31 @@ const Header = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
   const [openBurger, setOpenBurger] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      // Ensure window is defined (for SSR)
+      if (typeof window !== "undefined") {
+        const threshold = 30;
+        const currentScrollPos = window.pageYOffset;
+        const shouldBeSticky = currentScrollPos > threshold;
+
+        if (shouldBeSticky !== isSticky) {
+          setIsSticky(shouldBeSticky);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isSticky]);
+
+  const headerClass = isSticky ? "headerWrapper fixed" : "headerWrapper";
 
   return (
-    <div className="headerWrapper">
+    <div className={headerClass}>
       <header className={theme ? "header dark" : "header light"}>
         <div className="logoAndLinks">
           <Link to="/" className="headerLogo">
