@@ -1,7 +1,3 @@
-- Add number of students
-- Add satisfaction with stars
-- Add progress bar (if the course is done)
-
 ## Add Membership like the photo DRIVE G
 
 -- Add the comment secions
