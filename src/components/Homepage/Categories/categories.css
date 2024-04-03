@@ -1,5 +1,5 @@
 .categories {
-  padding: 100px 10%;
+  padding: 50px 10%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
@@ -15,6 +15,11 @@
   align-items: center;
   justify-content: center;
   cursor: default;
+  transition: all ease-in-out 0.2s;
+}
+
+.categoryBox:hover {
+  transform: translateY(-5px);
 }
 
 .categoryBox h4 {
@@ -23,10 +28,16 @@
   margin-bottom: 6px;
 }
 
-.categoryBox p {
+.categoryBox .categoryBoxDesc {
   font-family: "vazirFD";
   font-size: 10px;
   color: rgb(117, 117, 117);
+}
+
+.categoryBoxContent {
+  font-family: "vazirFD";
+  font-size: 12px;
+  text-align: justify;
 }
 
 .categoryBox img {

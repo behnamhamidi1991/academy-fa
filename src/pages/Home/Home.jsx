@@ -6,6 +6,7 @@ import Story from "../../components/Homepage/Story/Story";
 import Grid from "../../components/Homepage/Grid/Grid";
 import Courses from "../../components/Homepage/Courses/Courses";
 import Categories from "../../components/Homepage/Categories/Categories";
+import Feedback from "../../components/Homepage/Feedback/Feedback";
 
 const Home = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Grid />
       <Courses />
       <Categories />
+      <Feedback />
     </div>
   );
 };

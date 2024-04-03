@@ -1,0 +1,41 @@
+.feedback {
+  padding: 50px 10%;
+  cursor: default;
+}
+
+.feedbackHeader p {
+  font-family: "vazirRegular";
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.swiperFeedback {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperFeedbackBox {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 50px 10%;
+}
+
+.swiperFeedbackBox img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.swiperFeedbackBox p {
+  font-family: "vazirRegular";
+  font-size: 13px;
+  text-align: right;
+  line-height: 2;
+}
