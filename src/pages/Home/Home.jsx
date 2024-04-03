@@ -5,6 +5,7 @@ import "./home.css";
 import Story from "../../components/Homepage/Story/Story";
 import Grid from "../../components/Homepage/Grid/Grid";
 import Courses from "../../components/Homepage/Courses/Courses";
+import Categories from "../../components/Homepage/Categories/Categories";
 
 const Home = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Story />
       <Grid />
       <Courses />
+      <Categories />
     </div>
   );
 };

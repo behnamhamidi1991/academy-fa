@@ -505,3 +505,63 @@ export const courses = [
     numStudent: 119,
   },
 ];
+
+import img1 from "./assets/png/coding.png";
+import img2 from "./assets/png/barista.png";
+import img3 from "./assets/png/chart.png";
+import img4 from "./assets/png/123.png";
+import img5 from "./assets/png/cooking.png";
+import img6 from "./assets/png/flask.png";
+import img7 from "./assets/png/languages.png";
+import img8 from "./assets/png/sports.png";
+
+export const categoryIcons = [
+  {
+    id: 1,
+    title: "برنامه نویسی",
+    description: "آموزش به سبک نوین",
+    image: img1,
+  },
+  {
+    id: 2,
+    title: "تریدینگ",
+    description: "بازار بورس و سرمایه",
+    image: img3,
+  },
+  {
+    id: 3,
+    title: "باریستا",
+    description: "یک ماهه حرفه ای شو",
+    image: img2,
+  },
+  {
+    id: 4,
+    title: "آشپزی",
+    description: "استخدام بعد از قبولی",
+    image: img5,
+  },
+  {
+    id: 5,
+    title: "علوم پایه",
+    description: "پایه ات رو قوی کن",
+    image: img6,
+  },
+  {
+    id: 6,
+    title: "زبان خارجه",
+    description: "دوره های 3 ماهه",
+    image: img7,
+  },
+  {
+    id: 7,
+    title: "ورزش",
+    description: "دوره های حضوری و آنلاین",
+    image: img8,
+  },
+  {
+    id: 8,
+    title: "ریاضی",
+    description: "سخت رو آسون یاد بگیر",
+    image: img4,
+  },
+];
